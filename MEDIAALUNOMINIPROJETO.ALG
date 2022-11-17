@@ -22,12 +22,12 @@ escreva("Nome Aluno:")
          leia(nota4)
 media <- (nota1 + nota2 + nota3 + nota4)
 escreval("")
- escreva("A média do Aluno é:", media/4)
+ escreva("A mÃ©dia do Aluno Ã©:", media/4)
 escreval("")
-   se(media >= 6 )entao
-    escreva("O Aluno está REPROVADO")
-     senão
-      escreva("O Aluno está APROVADO")
+   se(media <= 6 )entao
+    escreva("O Aluno estÃ¡ REPROVADO")
+     senÃ£o
+      escreva("O Aluno estÃ¡ APROVADO")
    fimse
 escreval("")
 fimpara
