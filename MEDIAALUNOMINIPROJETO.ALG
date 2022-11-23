@@ -1,34 +1,32 @@
-Algoritmo "MediaAlunoMINIPROJETO"
+Algoritmo "Média10AlunosMiniProjetoBruno"
 
 Var
-
-nome:caractere
-nota1,nota2,nota3,nota4:real
-media:real
+n1,n2,n3,n4,media:real
+x:inteiro
 aluno:vetor[0..1] de caractere
-cont:inteiro
 
 Inicio
-para cont de 0 ate 1 faca
-escreva("Nome Aluno:")
- leia(aluno[cont])
-  escreva("Digite a nota1:")
-   leia(nota1)
-    escreva("Digite a nota2:")
-     leia(nota2)
-      escreva("Digite a nota3:")
-       leia(nota3)
-        escreva("Digite a nota4:")
-         leia(nota4)
-media <- (nota1 + nota2 + nota3 + nota4)
-escreval("")
- escreva("A média do Aluno é:", media/4)
-escreval("")
-   se(media <= 6 )entao
-    escreva("O Aluno está REPROVADO")
-     senão
-      escreva("O Aluno está APROVADO")
-   fimse
-escreval("")
-fimpara
+para x de 0 ate 1 faca
+  Escreval("Digite o nome do Aluno:")
+  Leia(aluno[x])
+  Escreval("Digite a 1ª nota do Aluno")
+  Leia(n1)
+  Escreval("Digite a 2ª nota do Aluno")
+  Leia(n2)
+  Escreval("Digite a 3ª nota do Aluno")
+  Leia(n3)
+  Escreval("Digite a 4ª nota do Aluno")
+  Leia(n4)
+  media <- ((n1+n2+n3+n4)/4)
+  escreval(" A Média do aluno:" ," ", aluno[x], " " ,"foi de", media,".")
+
+  ESCREVAL("")
+
+ se(media>=6)entao
+   escreval( aluno[x], " " ,"foi APROVADO")
+     senao
+   escreval( aluno[x], " " ,"foi REPROVADO")
+ FIMSE
+FIMPARA
+ESCREVAL("")
 Fimalgoritmo
